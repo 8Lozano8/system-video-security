@@ -1,0 +1,24 @@
+---
+import '../styles/Redes.css'
+import Facebook from '../../images/facebook.png'
+import Youtube from '../../images/youtube.png'
+import Whatsapp from '../../images/whatsapp.png'
+import Ubicacion from '../../images/ubicacion.png'
+import Telefono from '../../images/llamada-telefonica.png'
+---
+
+<section class="seccion-contacto-redes">
+    <div class="contact-section">
+        <div class="contact-info">
+            <p><img class="informacion" src={Ubicacion.src} alt="ubicación">Dirección: 123 Calle Principal, Ciudad</p>
+            <p><img class="informacion" src={Telefono.src} alt="teléfono">Teléfono: (123) 456-7890</p>
+        </div>
+        <div class="social-media">
+            <ul class="social-icons">
+                <li><a href="#" target="_blank"><img class="redes" src={Facebook.src} alt="facebook"></a></li>
+                <li><a href="#" target="_blank"><img class="redes" src={Youtube.src} alt="youtube"></a></li>
+                <li><a href="#" target="_blank"><img class="redes" src={Whatsapp.src} alt="whatsapp"></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
