@@ -1,0 +1,69 @@
+---
+import "../styles/Graficos.css";
+
+---
+
+<div class="contenedor-color">
+    <h2 class="seccion-titulo texto-negro text-center">Habilidades</h2>
+    <div class="container contenedor-graficos">
+        <div class="row columna">
+            <div
+                class="porcentajes col-lg-4 col-md-4 col-sm-12 habilidad"
+                style="--porcentaje: 100; --color: rgb(13, 110, 253)"
+            >
+                <svg width="150" height="150" class="rueda">
+                    <circle r="65" cx="50%" cy="50%" pathlength="100"></circle>
+                    <circle r="65" cx="50%" cy="50%" pathlength="100"></circle>
+                </svg>
+                <span>100%</span>
+                <h2 class="text-center">Calidad</h2>
+            </div>
+            <div
+                class="porcentajes col-lg-4 col-md-4 col-sm-12 habilidad"
+                style="--porcentaje: 100; --color: forestgreen"
+            >
+                <svg width="150" height="150" class="rueda">
+                    <circle r="65" cx="50%" cy="50%" pathlength="100"></circle>
+                    <circle r="65" cx="50%" cy="50%" pathlength="100"></circle>
+                </svg>
+                <span>100%</span>
+                <h2 class="text-center">Garantía</h2>
+            </div>
+
+            <div
+                class="porcentajes col-lg-4 col-md-4 col-sm-12 habilidad"
+                style="--porcentaje: 100; --color: orange"
+            >
+                <svg width="150" height="150" class="rueda">
+                    <circle r="65" cx="50%" cy="50%" pathlength="100"></circle>
+                    <circle r="65" cx="50%" cy="50%" pathlength="100"></circle>
+                </svg>
+                <span>100%</span>
+                <h2 class="text-center">Eficiencia</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const habilidades = document.querySelectorAll('.habilidad');
+
+        const options = {
+            threshold: 0.5, // Porcentaje visible para disparar la animación
+        };
+
+        const intersectionObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animar'); // Agrega la clase para activar la animación
+                    observer.unobserve(entry.target); // Deja de observar una vez que se activa la animación
+                }
+            });
+        }, options);
+
+        habilidades.forEach(habilidad => {
+            intersectionObserver.observe(habilidad);
+        });
+    });
+</script>

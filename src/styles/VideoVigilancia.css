@@ -1,0 +1,17 @@
+.video-vigilancia-movil {
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .video-vigilancia-compu {
+        display: none;
+    }
+
+    .imagen-producto {
+        width: 100%;
+    }
+
+    .video-vigilancia-movil {
+        display: block;
+    }
+}

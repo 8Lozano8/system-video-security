@@ -1,0 +1,33 @@
+.contenedor-nosotros-resumen {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.imagen-nosotros {
+    border-radius: 10px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px){
+    .contenedor-nosotros-resumen {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contenedor-nosotros-resumen {
+        margin-top: -100px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .contenedor-nosotros-resumen {
+        margin-top: -250px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .contenedor-nosotros-resumen {
+        margin-top: -300px;
+    }
+}

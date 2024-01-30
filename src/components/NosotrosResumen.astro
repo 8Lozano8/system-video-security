@@ -1,10 +1,11 @@
 ---
-
+import SistemaDVR from '../../images/sistema-dvr.png'
+import '../styles/NosotrosResumen.css'
 ---
 
 <div class="container contenedor-nosotros-resumen">
-    <div class="row">
-        <div class="col-xl-6 col-lg-6">
+    <div class="row d-flex align-items-center">
+        <div class="col-xl-6 col-lg-6 py-5">
             <h2 class="fw-bold">Un poco sobre nosotros</h2>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -12,10 +13,10 @@
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.
             </p>
-            <a href="/nosotros" class="btn btn-warning">Ver más</a>
+            <a href="/nosotros" class="btn btn-primary">Ver más</a>
         </div>
         <div class="col-xl-6 col-lg-6">
-            <!-- <img src={} alt="Un poco sobre System Video Security"> -->
+            <img class="imagen-nosotros" src={SistemaDVR.src} alt="Un poco sobre System Video Security">
         </div>
     </div>
 </div>

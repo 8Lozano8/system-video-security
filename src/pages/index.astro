@@ -1,5 +1,10 @@
 ---
 import Carrusel from "../components/Carrusel.astro";
+import Clientes from "../components/Clientes.astro";
+import Graficos from "../components/Graficos.astro";
+import Mapa from "../components/Mapa.astro";
+import NosotrosResumen from "../components/NosotrosResumen.astro";
+import VideoVigilancia from "../components/VideoVigilancia.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Página de inicio"
 
@@ -7,4 +12,9 @@ const pageTitle = "Página de inicio"
 
 <BaseLayout pageTitle={pageTitle}>
 	<Carrusel />
+	<NosotrosResumen />
+	<Graficos />
+	<VideoVigilancia />
+	<Clientes />
+	<Mapa />
 </BaseLayout>

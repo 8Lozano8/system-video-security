@@ -1,0 +1,95 @@
+---
+import Cliente01 from '../../images/Cliente01.png'
+import '../styles/Clientes.css'
+---
+<div class="container contenedor-clientes">
+    <section id="testimonios" class="testimonios seccion-clara">
+        <h2 class="seccion-titulo text-center">Clientes</h2>
+    
+        <!-- Carrusel -->
+        <div id="testimonios-carrusel" class="container carousel slide carousel-dark">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img
+                            class="testimonio-imagen rounded-circle"
+                            src={Cliente01.src}
+                            alt="foto de gino"
+                        />
+                        <p class="testimonio-texto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quod provident ut quam facilis neque ex est dolor
+                            inventore alias animi reprehenderit reiciendis,
+                            consectetur pariatur ullam incidunt expedita ipsum harum
+                            et!.
+                        </p>
+                        <div class="testimonio-info">
+                            <p class="cliente">Gino</p>
+                            <p class="cargo">
+                                Gerente de proyectos en Desarrollo Web
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img
+                            class="testimonio-imagen rounded-circle"
+                            src={Cliente01.src}
+                            alt="foto de nora"
+                        />
+                        <p class="testimonio-texto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quod provident ut quam facilis neque ex est dolor
+                            inventore alias animi reprehenderit reiciendis,
+                            consectetur pariatur ullam incidunt expedita ipsum harum
+                            et!.
+                        </p>
+                        <div class="testimonio-info">
+                            <p class="cliente">Nora</p>
+                            <p class="cargo">Gerente de Diseño en Desarrollo Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img
+                            class="testimonio-imagen rounded-circle"
+                            src={Cliente01.src}
+                            alt="foto de leonardo"
+                        />
+                        <p class="testimonio-texto">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quod provident ut quam facilis neque ex est dolor
+                            inventore alias animi reprehenderit reiciendis,
+                            consectetur pariatur ullam incidunt expedita ipsum harum
+                            et!.
+                        </p>
+                        <div class="testimonio-info">
+                            <p class="cliente">Leonardo</p>
+                            <p class="cargo">Director de Aprende a Programar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonios-carrusel"
+                data-bs-slide="prev"
+            >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonios-carrusel"
+                data-bs-slide="next"
+            >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </section>
+</div>

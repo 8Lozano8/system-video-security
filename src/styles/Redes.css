@@ -14,7 +14,7 @@ body {
 }
 
 .seccion-contacto-redes {
-    background-color: #615A00;
+    background-color: rgb(160, 154, 154);
 }
 
 .contact-section {
@@ -22,7 +22,7 @@ body {
     justify-content: space-between;
     font-size: 14px;
     padding: 20px;
-    background-color: #2A2F33;
+    background-color: rgb(160, 154, 154);
 }
 
 .contact-info {
