@@ -67,3 +67,35 @@ circle:nth-child(2) {
         margin: 0 auto;
     }
 }
+
+@media screen and (max-width: 375px){
+    .rueda {
+        display: block;
+        margin-left: -10%;
+    }
+
+    .texto-habilidad {
+        margin-left: -20%;
+    }
+
+    .texto-porcentaje {
+        margin-left: -19%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .rueda {
+        display: block;
+        margin-left: -25%;
+    }
+
+    .texto-habilidad {
+        margin-left: -45%;
+    }
+
+    .texto-porcentaje {
+        margin-left: -38%;
+    }
+}
+
+
