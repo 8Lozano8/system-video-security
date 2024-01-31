@@ -1,0 +1,70 @@
+---
+import "../styles/ContactanosPg.css";
+---
+
+<div class="contenedor-contacto container">
+    <div
+        class="contactanos mx-auto my-auto col-xl-6 col-lg-6 col-md-12 col-sm-12"
+    >
+        <h2 class="fw-bold text-center">Ponerse en contacto</h2>
+        <form action="https://formspree.io/f/xwkgvqkj" method="POST">
+            <div class="py-2">
+                <label class="form-label" for="nombres"> Nombres</label>
+                <input
+                    class="form-control"
+                    type="text"
+                    name="nombres"
+                    id="nombres"
+                    required
+                />
+            </div>
+
+            <div class="py-2">
+                <label class="form-label" for="apellidos"> Apellidos</label>
+                <input
+                    class="form-control"
+                    type="text"
+                    name="apellidos"
+                    id="apellidos"
+                    required
+                />
+            </div>
+
+            <div class="py-2">
+                <label class="form-label" for="email"> Email</label>
+                <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                />
+            </div>
+
+            <div class="py-2">
+                <label class="form-label" for="telefono"> Teléfono</label>
+                <input
+                    class="form-control"
+                    type="tel"
+                    name="telefono"
+                    id="telefono"
+                    required
+                />
+            </div>
+
+            <div class="py-2">
+                <label for="mensaje"> Mensaje</label>
+                <textarea
+                    class="form-control"
+                    name="mensaje"
+                    id="mensaje"
+                    required></textarea>
+            </div>
+
+            <!-- your other form fields go here -->
+            <button class="py-2 btn btn-primary boton-enviar" type="submit"
+                >Enviar</button
+            >
+        </form>
+    </div>
+</div>
