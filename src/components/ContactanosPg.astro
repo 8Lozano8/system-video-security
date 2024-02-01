@@ -1,70 +1,45 @@
 ---
+import Contactanos from '../../images/contactanos.png'
 import "../styles/ContactanosPg.css";
 ---
 
 <div class="contenedor-contacto container">
-    <div
-        class="contactanos mx-auto my-auto col-xl-12 col-lg-12 col-md-12 col-sm-12"
-    >
-        <h2 class="fw-bold text-center">Ponerse en contacto</h2>
-        <form action="https://formspree.io/f/mgegawze" method="POST">
-            <div class="py-2">
-                <label class="form-label" for="nombres"> Nombres</label>
-                <input
-                    class="form-control"
-                    type="text"
-                    name="nombres"
-                    id="nombres"
-                    required
-                />
-            </div>
 
-            <div class="py-2">
-                <label class="form-label" for="apellidos"> Apellidos</label>
-                <input
-                    class="form-control"
-                    type="text"
-                    name="apellidos"
-                    id="apellidos"
-                    required
-                />
-            </div>
+    <div class="row">
+        <h2 class="fw-bold text-center py-5">Contáctanos</h2>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <form action="https://formspree.io/f/mgegawze" method="POST">
+                <div class="mb-3">
+                    <label for="nombres" class="form-label">Nombres</label>
+                    <input type="text" class="form-control " name="nombres" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="apellidos" class="form-label">Apellidos</label>
+                    <input type="text" class="form-control " name="apellidos" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control " name="email" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control " name="telefono" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" rows="3" class="form-control" required></textarea>
+                </div>
+            </form>
+            <button type="submit" class="form-control btn btn-primary">Enviar</button>
+        </div>
 
-            <div class="py-2">
-                <label class="form-label" for="email"> Email</label>
-                <input
-                    class="form-control"
-                    type="email"
-                    name="email"
-                    id="email"
-                    required
-                />
-            </div>
-
-            <div class="py-2">
-                <label class="form-label" for="telefono"> Teléfono</label>
-                <input
-                    class="form-control"
-                    type="tel"
-                    name="telefono"
-                    id="telefono"
-                    required
-                />
-            </div>
-
-            <div class="py-2">
-                <label for="mensaje"> Mensaje</label>
-                <textarea
-                    class="form-control"
-                    name="mensaje"
-                    id="mensaje"
-                    required></textarea>
-            </div>
-
-            <!-- your other form fields go here -->
-            <button class="py-2 btn btn-primary boton-enviar" type="submit"
-                >Enviar</button
-            >
-        </form>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+            <img class="imagen-contactanos" src={Contactanos.src} alt="Contactanos">
+        </div>
     </div>
-</div>
+
+    </div>
