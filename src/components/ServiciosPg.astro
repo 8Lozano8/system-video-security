@@ -1,86 +1,72 @@
 ---
-import SistemaDVR from '../../images/sistema-dvr.png'
-import Smart from '../../images/smart.png'
-import AlarmaVecinal from '../../images/alarma-vecinal.png'
-import '../styles/NosotrosResumen.css'
-import '../styles/VideoVigilancia.css'
+import SistemaDVR from "../../images/sistema-dvr.png";
+import Smart from "../../images/smart.png";
+import AlarmaVecinal from "../../images/alarma-vecinal.png";
+import "../styles/VideoVigilancia.css";
 ---
 
-<div class="container video-vigilancia-compu contenedor-nosotros-resumen">
-    <h2 class="text-center fw-bold py-5">Videovigilancia</h2>
-    <div class="row d-flex align-items-center">
-        <div class="col-xl-6 col-lg-6">
-            <h2 class="fw-bold">Sistemas con DVR-NVR</h2>
-            <p>
-                NVR y DVR desempeñan un papel crucial en el ámbito de la videovigilancia como los principales dispositivos de almacenamiento y análisis. La principal distinción radica en que el DVR codifica y decodifica videos analógicos recolectados por cámaras analógicas, almacenándolos en un disco duro, mientras que el NVR registra directamente el video digital que la cámara ha codificado. Al comparar las características del NVR con el DVR, se destacan aspectos como la diversidad de front-end, la adaptabilidad de la red, la aplicación de transmisión de medios y la distribución. El NVR presenta ventajas notables, como la diversificación de datos de imágenes, amplias capacidades de transmisión y expansión, conveniencias en el cableado de construcción, facilidades Plug and Play, accesibilidad a almacenamiento masivo con respaldo de acceso remoto, ventajas en seguridad y gestión. Con la creciente popularidad de la alta definición, se anticipa que el NVR liderará el mercado de almacenamiento de seguridad, incluso sustituyendo al DVR gracias a sus ventajas técnicas y funcionales.
-            </p>
-        </div>
-        <div class="col-xl-6 col-lg-6">
-            <img class="imagen-nosotros" src={SistemaDVR.src} alt="Un poco sobre System Video Security">
-        </div>
-    </div>
+<div class="container contenedor-vigilancia">
+    <h2 class="fw-bold text-center titulo-servicio">Servicios</h2>
+    <div class="row">
+        <div class="contenedor-imagen col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="caja-imagen">
+                <img
+                    class="imagen-servicio"
+                    src={SistemaDVR.src}
+                    alt="Sistema DVR"
+                />
+            </div>
 
-    <div class="row d-flex align-items-center">
-        <div class="col-xl-6 col-lg-6">
-            <img class="imagen-nosotros" src={Smart.src} alt="Un poco sobre System Video Security">
+            <div class="descripcion-tarjeta">
+                <h5>Sistemas con DVR-NVR</h5>
+                <p>
+                    NVR y DVR desempeñan un papel crucial en el ámbito de la
+                    videovigilancia como los principales dispositivos de
+                    almacenamiento y análisis.
+                </p>
+                <a href="/servicios" class="boton-tarjeta">Ver más →</a>
+            </div>
         </div>
-        <div class="col-xl-6 col-lg-6">
-            <h2 class="fw-bold">Cámaras Smart-Wifi</h2>
-            <p>
-                La creciente popularidad de espacios inteligentes destaca la conveniencia de tener todos los dispositivos conectados y accesibles desde un teléfono, incluso cuando se está fuera. Los sistemas de seguridad inteligente, como las cámaras con alertas instantáneas y control por voz, ofrecen una forma proactiva de monitorear y proteger propiedades, integrándose eficientemente con otros dispositivos inteligentes. Además, la capacidad de acceder a la seguridad desde cualquier lugar brinda una tranquilidad incomparable, superando los métodos tradicionales de vigilancia.
-            </p>
-        </div>
-    </div>
 
-    <div class="row d-flex align-items-center">
-        <div class="col-xl-6 col-lg-6">
-            <h2 class="fw-bold">Alarmas Vecinales</h2>
-            <p>
-                La seguridad de la comunidad es crucial, y las alarmas vecinales son eficaces para mejorarla. Al instalar una alarma de este tipo, se transmite un claro compromiso de los residentes hacia la seguridad del vecindario, disuadiendo la comisión de delitos. Estas alarmas tienen un alcance superior a 200 metros, proporcionando una capa extra de protección. Se destaca, con funciones habladas instantáneas, sirenas, control remoto, batería de respaldo, reflectores LED y soporte de fijación, trabajando en conjunto para brindar una solución completa de seguridad.
-            </p>
-        </div>
-        <div class="col-xl-6 col-lg-6">
-            <img class="imagen-nosotros" src={AlarmaVecinal.src} alt="Un poco sobre System Video Security">
-        </div>
-    </div>
-</div>
-<!-- Version movil -->
-<div class="container video-vigilancia-movil">
-    <h2 class="text-center fw-bold py-5">Video vigilancia</h2>
-    <div class="row d-flex align-items-center py-5">
-        <div class="col-xl-6 col-lg-6 col-md-12">
-            <h2 class="fw-bold">Sistemas con DVR-NVR</h2>
-            <p>
-                NVR y DVR desempeñan un papel crucial en el ámbito de la videovigilancia como los principales dispositivos de almacenamiento y análisis. La principal distinción radica en que el DVR codifica y decodifica videos analógicos recolectados por cámaras analógicas, almacenándolos en un disco duro, mientras que el NVR registra directamente el video digital que la cámara ha codificado. Al comparar las características del NVR con el DVR, se destacan aspectos como la diversidad de front-end, la adaptabilidad de la red, la aplicación de transmisión de medios y la distribución. El NVR presenta ventajas notables, como la diversificación de datos de imágenes, amplias capacidades de transmisión y expansión, conveniencias en el cableado de construcción, facilidades Plug and Play, accesibilidad a almacenamiento masivo con respaldo de acceso remoto, ventajas en seguridad y gestión. Con la creciente popularidad de la alta definición, se anticipa que el NVR liderará el mercado de almacenamiento de seguridad, incluso sustituyendo al DVR gracias a sus ventajas técnicas y funcionales.
-            </p>
-        </div>
-        <div class="col-xl-6 col-lg-6 col-md-12">
-            <img class="imagen-producto" src={SistemaDVR.src} alt="Un poco sobre System Video Security">
-        </div>
-    </div>
+        <div class="contenedor-imagen col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="caja-imagen">
+                <img
+                    class="imagen-servicio"
+                    src={Smart.src}
+                    alt="Sistema DVR"
+                />
+            </div>
 
-    <div class="row d-flex align-items-center py-5">
-        <div class="col-xl-6 col-lg-6">
-            <h2 class="fw-bold">Cámaras Smart-Wifi</h2>
-            <p>
-                La creciente popularidad de espacios inteligentes destaca la conveniencia de tener todos los dispositivos conectados y accesibles desde un teléfono, incluso cuando se está fuera. Los sistemas de seguridad inteligente, como las cámaras con alertas instantáneas y control por voz, ofrecen una forma proactiva de monitorear y proteger propiedades, integrándose eficientemente con otros dispositivos inteligentes. Además, la capacidad de acceder a la seguridad desde cualquier lugar brinda una tranquilidad incomparable, superando los métodos tradicionales de vigilancia.
-            </p>
+            <div class="descripcion-tarjeta">
+                <h5>Cámaras Smart-Wifi</h5>
+                <p>
+                    La creciente popularidad de espacios inteligentes destaca la
+                    conveniencia de tener todos los dispositivos conectados y
+                    accesibles desde un teléfono, incluso cuando se está fuera.
+                </p>
+                <a href="/servicios" class="boton-tarjeta">Ver más →</a>
+            </div>
         </div>
-        <div class="col-xl-6 col-lg-6">
-            <img class="imagen-producto" src={Smart.src} alt="Un poco sobre System Video Security">
-        </div>
-        
-    </div>
 
-    <div class="row d-flex align-items-center py-5">
-        <div class="col-xl-6 col-lg-6">
-            <h2 class="fw-bold">Alarmas Vecinales</h2>
-            <p>
-                La seguridad de la comunidad es crucial, y las alarmas vecinales son eficaces para mejorarla. Al instalar una alarma de este tipo, se transmite un claro compromiso de los residentes hacia la seguridad del vecindario, disuadiendo la comisión de delitos. Estas alarmas tienen un alcance superior a 200 metros, proporcionando una capa extra de protección. Se destaca, con funciones habladas instantáneas, sirenas, control remoto, batería de respaldo, reflectores LED y soporte de fijación, trabajando en conjunto para brindar una solución completa de seguridad.
-            </p>
-        </div>
-        <div class="col-xl-6 col-lg-6">
-            <img class="imagen-producto" src={AlarmaVecinal.src} alt="Un poco sobre System Video Security">
+        <div class="contenedor-imagen col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div class="caja-imagen">
+                <img
+                    class="imagen-servicio"
+                    src={AlarmaVecinal.src}
+                    alt="Sistema DVR"
+                />
+            </div>
+
+            <div class="descripcion-tarjeta">
+                <h5>Alarmas Vecinales</h5>
+                <p>
+                    La seguridad de la comunidad es crucial, y las alarmas
+                    vecinales son eficaces para mejorarla. Se transmite un claro compromiso de los
+                    residentes hacia la seguridad del vecindario, disuadiendo la
+                    comisión de delitos.
+                </p>
+                <a href="/servicios" class="boton-tarjeta">Ver más →</a>
+            </div>
         </div>
     </div>
 </div>

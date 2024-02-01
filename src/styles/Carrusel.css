@@ -1,3 +1,9 @@
 .bordered-text {
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
+
+@media screen and (max-width: 1024px) {
+    .texto-carrusel {
+        margin-top: 0px;
+    }
+}
